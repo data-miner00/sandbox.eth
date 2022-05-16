@@ -5,7 +5,7 @@
  * them to suit your project as necessary.
  *
  * More information about configuration can be found at:
- * 
+ *
  * https://trufflesuite.com/docs/truffle/reference/configuration
  *
  * To deploy via Infura you'll need a wallet provider (like @truffle/hdwallet-provider)
@@ -18,9 +18,17 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
-//
-// const fs = require('fs');
+const HDWalletProvider = require("@truffle/hdwallet-provider");
+
+const fs = require("fs");
+const privateKeys = [
+  "0x" +
+    fs
+      .readFileSync("private-key.crt")
+      .toString()
+      .trim(),
+];
+
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
@@ -71,6 +79,31 @@ module.exports = {
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
+    eth: {
+      provider: () => new HDWalletProvider(privateKeys, "ETH_NODE_URL"),
+      network_id: 1,
+      skipDryRun: true,
+    },
+    ethTestnet: {
+      provider: () => new HDWalletProvider(privateKeys, "ETH_NODE_URL"),
+      network_id: 5,
+      skipDryRun: true,
+    },
+    bsc: {
+      provider: () =>
+        new HDWalletProvider(privateKeys, "https://bsc-dataseed.binance.org"),
+      network_id: 56,
+      skipDryRun: true,
+    },
+    bscTestnet: {
+      provider: () =>
+        new HDWalletProvider(
+          privateKeys,
+          "https://data-seed-prebsc-1-s1.binance.org:8545"
+        ),
+      network_id: 97,
+      skipDryRun: true,
+    },
   },
 
   // Set default mocha options here, use special reporters etc.
@@ -81,7 +114,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.13",      // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.13", // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
@@ -90,7 +123,7 @@ module.exports = {
       //  },
       //  evmVersion: "byzantium"
       // }
-    }
+    },
   },
 
   // Truffle DB is currently disabled by default; to enable it, change enabled:
@@ -104,13 +137,13 @@ module.exports = {
   // $ truffle migrate --reset --compile-all
   //
   // db: {
-    // enabled: false,
-    // host: "127.0.0.1",
-    // adapter: {
-    //   name: "sqlite",
-    //   settings: {
-    //     directory: ".db"
-    //   }
-    // }
+  // enabled: false,
+  // host: "127.0.0.1",
+  // adapter: {
+  //   name: "sqlite",
+  //   settings: {
+  //     directory: ".db"
+  //   }
+  // }
   // }
 };
