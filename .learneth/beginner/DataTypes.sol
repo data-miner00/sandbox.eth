@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
-contract Primitives {
-    
+import "@openzeppelin/contracts/utils/Strings.sol";
 
+contract Primitives {
     bool public boo = true;
 
     /*
@@ -39,4 +39,23 @@ contract Primitives {
     address public newAddr = 0x0000000000000000000000000000000000000000;
     int public neg = -12;
     uint8 public newU = 0;
+
+    // String type
+    string public message = "msg";
+
+    function combineString(string memory str1, string memory str2) pure public returns (string memory) {
+        return string(abi.encodePacked(str1, " ", str2));
+    }
+
+    // Convert to bytes
+    function numChars(string memory str1) pure public returns(uint) {
+        bytes memory byte1 = bytes(str1);
+        return byte1.length;
+    }
+
+    function intToStr() pure public returns (string memory) {
+        // Convert uint to string
+        string memory str = Strings.toString(123);
+        return str;
+    }
 }
