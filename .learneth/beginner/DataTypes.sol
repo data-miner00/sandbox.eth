@@ -58,4 +58,13 @@ contract Primitives {
         string memory str = Strings.toString(123);
         return str;
     }
+    
+    // Time units
+    function timeUnits() pure public {
+        assert(1 seconds == 1);
+        assert(1 minutes == 60 seconds);
+        assert(1 hours == 60 minutes);
+        assert(1 days == 24 hours);
+        assert(1 weeks == 7 days);
+    }
 }
