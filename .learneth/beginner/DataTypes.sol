@@ -67,4 +67,7 @@ contract Primitives {
         assert(1 days == 24 hours);
         assert(1 weeks == 7 days);
     }
+
+    // Constant
+    uint constant fixedInt = 24;
 }
