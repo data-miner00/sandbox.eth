@@ -2,21 +2,21 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 contract Storage {
-  uint[] public ids;
+    uint[] public ids;
 
-  function add(uint id) public {
-    ids.push(id);
-  }
+    function add(uint id) public {
+        ids.push(id);
+    }
 
-  function get(uint i) view public returns(uint) {
-    return ids[i];
-  }
+    function get(uint i) public view returns(uint) {
+        return ids[i];
+    }
 
-  function getAll() view public returns(uint[] memory) {
-    return ids;
-  }
+    function getAll() public view returns(uint[] memory) {
+        return ids;
+    }
 
-  function length() view public returns(uint) {
-    return ids.length;
-  }
+    function length() public view returns(uint) {
+        return ids.length;
+    }
 }
