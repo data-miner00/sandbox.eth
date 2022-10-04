@@ -7,8 +7,8 @@ contract Lottery {
     constructor() payable {}
 
     receive () external payable {
-        require(msg.value == 10 ether);
-        require(block.timestamp != pastBlockTime);
+        require(msg.value == 10 ether, "must be equal to 10 ether");
+        require(block.timestamp != pastBlockTime, "must not be old block");
 
         pastBlockTime = block.timestamp;
 
