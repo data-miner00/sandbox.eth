@@ -1,0 +1,8 @@
+- [Solidity Tutorial - Derek](https://www.youtube.com/watch?v=3g2WT2jms_k)
+- [Solidity Testing With Truffle For Beginners | Full Course | 5 Examples - EatTheBlocks](https://www.youtube.com/watch?v=b2VInFwZmNw)
+- [Remix IDE](http://remix.ethereum.org/)
+- [Open Zeppelin](https://www.openzeppelin.com/)
+- [Open Zeppelin Contracts](https://www.openzeppelin.com/contracts)
+- [Open Zeppelin Contracts Github](https://github.com/OpenZeppelin/openzeppelin-contracts)
+- [Proof of Existence](https://proofofexistence.com/)
+- [Ethereum Stack Exchange](https://ethereum.stackexchange.com/)
