@@ -1,5 +1,5 @@
 {
-  "name": "sandbox.eth",
+  "name": "sandbox.eth.truffle",
   "version": "1.0.0",
   "description": "A personal solidity repository",
   "main": "contracts/Transaction.sol",
