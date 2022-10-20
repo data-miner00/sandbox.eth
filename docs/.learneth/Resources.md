@@ -13,3 +13,4 @@
 - [Faucets Chainlink](https://faucets.chain.link/)
 - [Infura](https://infura.io/)
 - [Alchemy](https://www.alchemy.com/)
+- [Opensea Metadata](https://docs.opensea.io/docs/metadata-standards)

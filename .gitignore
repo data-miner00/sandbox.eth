@@ -1,6 +1,2 @@
-contracts/.placeholder
-test/.placeholder
-build
+# dependencies
 node_modules
-*.crt
-.secret
