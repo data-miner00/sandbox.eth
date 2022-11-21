@@ -45,3 +45,34 @@ interface IERC165 {
 - Optional extensions
   - `IERC721Enumerable` enables contract to publish full list of tokens and make the discoverable.
   - `IERC721Metadata` enables a contract to associate additional information to a token.
+
+# Metadata Interface
+
+- Optional, allow to specify additional info to ERC721 (`name`, `symbol`, `tokenURI`)
+- `name` returns the name of the token collection. All token created with the contract have same name regardless their tokenId.
+- `symbol` returns the symbol of the token collection.
+- `tokenURI` returns the URI for the token with the id `tokenId`. It is for the individual token in collection.
+
+```json
+{
+  "title": "Asset Metadata",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Identifies the asset to which this NFT represents"
+    },
+    "description": {
+      "type": "string",
+      "description": "Describes the asset to which this NFT represents"
+    },
+    "image": {
+      "type": "string",
+      "description": "A URI pointing to a resource with mime type image/* representing the asset to which this NFT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+    }
+  }
+}
+```
+
+- ERC721 standard is flexible.
+- The tokenURI does not need to point to a JSON document and the JSON does not need to have all properties.
