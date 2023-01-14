@@ -1,0 +1,15 @@
+{
+  "name": "truffle",
+  "version": "0.0.1",
+  "description": "A personal solidity repository",
+  "scripts": {
+    "lint": "solhint contracts/**/*.sol",
+    "build": "truffle compile",
+    "migrate": "truffle migrate",
+    "dev": "truffle develop",
+    "test": "truffle test"
+  },
+  "directories": {
+    "test": "test"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "description": "Documentations under sandbox.eth",
+  "scripts": {
+    "build": "eleventy --input=./src --output=../../dist/packages/docs",
+    "serve": "eleventy --serve --input=./src --output=../../dist/packages/docs"
+  }
+}
