@@ -5,7 +5,9 @@
   "scripts": {
     "build:hardhat": "nx build hardhat",
     "build:truffle": "nx build truffle",
-    "graph": "nx graph"
+    "build:affected": "nx affected --target=build",
+    "graph": "nx graph",
+    "print:affected": "nx print-affected --select=projects"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
