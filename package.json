@@ -8,6 +8,7 @@
     "graph": "nx graph"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
     "@chainlink/contracts": "^0.6.0",
     "@ethersproject/abi": "^5.4.7",
     "@ethersproject/providers": "^5.4.7",
