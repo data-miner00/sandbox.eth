@@ -14,3 +14,11 @@
 - [Infura](https://infura.io/)
 - [Alchemy](https://www.alchemy.com/)
 - [Opensea Metadata](https://docs.opensea.io/docs/metadata-standards)
+- [Solidity by Example](https://solidity-by-example.org/)
+
+## Faucets
+
+- [Alchemy Goerli Faucet](https://goerlifaucet.com/)
+- [Paradigm Faucet](https://faucet.paradigm.xyz/)
+- [My Crypto Wallet Faucet](https://app.mycrypto.com/faucet)
+- [Network and Faucet Lists](https://ethereum.org/en/developers/docs/networks/#testnet-faucets)
