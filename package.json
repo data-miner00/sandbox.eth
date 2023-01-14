@@ -2,7 +2,11 @@
   "name": "sandbox.eth",
   "version": "0.0.1",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:hardhat": "nx build hardhat",
+    "build:truffle": "nx build truffle",
+    "graph": "nx graph"
+  },
   "devDependencies": {
     "@chainlink/contracts": "^0.6.0",
     "@ethersproject/abi": "^5.4.7",

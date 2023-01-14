@@ -1,2 +1,8 @@
 # dependencies
 node_modules
+
+# build directory
+dist
+
+# nx credentials
+nx-cloud.env
