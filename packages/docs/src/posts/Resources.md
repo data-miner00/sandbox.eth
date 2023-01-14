@@ -1,3 +1,7 @@
+---
+pageTitle: Useful Solidity/Ethereum resources
+---
+
 - [Solidity Tutorial - Derek](https://www.youtube.com/watch?v=3g2WT2jms_k)
 - [Solidity Testing With Truffle For Beginners | Full Course | 5 Examples - EatTheBlocks](https://www.youtube.com/watch?v=b2VInFwZmNw)
 - [Remix IDE](http://remix.ethereum.org/)
@@ -15,6 +19,7 @@
 - [Alchemy](https://www.alchemy.com/)
 - [Opensea Metadata](https://docs.opensea.io/docs/metadata-standards)
 - [Solidity by Example](https://solidity-by-example.org/)
+- [Chainlink](https://chain.link/)
 
 ## Faucets
 
