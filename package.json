@@ -7,6 +7,8 @@
     "build:truffle": "nx build truffle",
     "build:docs": "nx build docs",
     "serve:docs": "nx serve docs",
+    "test:hardhat": "nx test hardhat",
+    "test:truffle": "nx test truffle",
     "build:affected": "nx affected --target=build",
     "graph": "nx graph",
     "print:affected": "nx print-affected --select=projects"
