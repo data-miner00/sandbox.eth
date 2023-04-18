@@ -11,5 +11,12 @@
   },
   "directories": {
     "test": "test"
+  },
+  "devDependencies": {
+    "solhint": "^3.3.7",
+    "@truffle/hdwallet-provider": "^2.1.5",
+    "@openzeppelin/contracts": "^4.8.1",
+    "@chainlink/contracts": "^0.6.0",
+    "truffle": "^5.7.3"
   }
 }
