@@ -6,3 +6,6 @@ dist
 
 # nx credentials
 nx-cloud.env
+
+# debug logs
+.pnpm-debug.log

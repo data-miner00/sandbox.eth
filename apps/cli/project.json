@@ -1,0 +1,21 @@
+{
+  "root": "apps/cli",
+  "sourceRoot": "apps/cli/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "go build -o=../../dist/apps/cli/ ./src/main.go",
+        "cwd": "apps/cli"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "go run ./src/main.go",
+        "cwd": "apps/cli"
+      }
+    }
+  }
+}

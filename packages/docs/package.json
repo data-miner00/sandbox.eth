@@ -5,5 +5,10 @@
   "scripts": {
     "build": "eleventy --input=./src --output=../../dist/packages/docs",
     "serve": "eleventy --serve --input=./src --output=../../dist/packages/docs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@chainlink/contracts": "^0.6.0",
+    "@openzeppelin/contracts": "^4.8.1"
   }
 }
