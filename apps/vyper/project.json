@@ -1,0 +1,14 @@
+{
+  "root": "app/vyper",
+  "sourceRoot": "app/vyper/contracts",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vyper ./contracts/HelloWorld.vy",
+        "cwd": "apps/vyper"
+      }
+    }
+  }
+}
